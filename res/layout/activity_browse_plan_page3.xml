@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Browse_plans_page2" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" >
+    </RelativeLayout>
+    
+    
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        
+         <TextView
+            android:id="@+id/title_browse_plans_page3info"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+           
+            android:layout_marginTop="19dp"
+            android:gravity="center_horizontal"
+            android:text="@string/title_activity_Browse_Plans_page3_header"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        
+
+       
+        <TextView
+            android:id="@+id/ALSorESRD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/ALSorESRDBrowse" />
+
+        <RadioGroup
+	        android:id="@+id/ALSorESRDRadio"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	        
+        <RadioButton
+            android:id="@+id/ALSorESRDYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/ALSorESRDYes" />
+
+        <RadioButton
+            android:id="@+id/ALSorESRDNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/ALSorESRDNo" />
+        
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/BlindDisabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="@string/BlindDisabledBrowse" />
+
+       <RadioGroup
+	        android:id="@+id/BlindDisabledRadio"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+        
+        <RadioButton
+            android:id="@+id/BlindDisabledYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/BlindDisabledYes" />
+
+        <RadioButton
+            android:id="@+id/BlindDisabledNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/BlindDisabledNo" />
+
+        </RadioGroup>
+        
+        <TextView
+            android:id="@+id/pregnant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:hint="@string/pregnantBrowse" />
+
+        <RadioGroup
+	        android:id="@+id/Pregnant"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+        
+        <RadioButton
+            android:id="@+id/pregnantYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/pregnantYes" />
+
+        <RadioButton
+            android:id="@+id/pregnantNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/pregnantNo" />
+        
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/check_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="22dp"
+        android:padding="10dp"
+        android:textColor="#ff0000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/check_error"
+        android:layout_marginRight="30dp"
+        android:onClick="nextPage"
+        android:text="@string/next_button" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/check_error"
+        android:layout_below="@+id/check_error"
+        android:onClick="goback"
+        android:text="@string/back_button" />
+
+</RelativeLayout>

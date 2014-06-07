@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Browse_plans_page2" >
+
+    <TextView
+        android:id="@+id/title_browse_plans_page2info"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:gravity="center_horizontal"
+        android:text="@string/title_activity_Browse_Plans_page2_header"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/age_checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/age_checkBox2"
+        android:layout_alignBottom="@+id/age_checkBox2"
+        android:layout_alignLeft="@+id/age_checkBox5"
+        android:text="@string/title_activity_Browse_Plans_page2_browseplansagerange1" />
+
+    <CheckBox
+        android:id="@+id/age_checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/household_title"
+        android:layout_below="@+id/household_title"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_activity_Browse_Plans_page2_browseplansagerange2" />
+
+    <CheckBox
+        android:id="@+id/age_checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/age_checkBox4"
+        android:layout_alignBottom="@+id/age_checkBox4"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_activity_Browse_Plans_page2_browseplansagerange3" />
+
+    <CheckBox
+        android:id="@+id/age_checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/age_checkBox4"
+        android:layout_below="@+id/age_checkBox4"
+        android:text="@string/title_activity_Browse_Plans_page2_browseplansagerange4" />
+
+    <CheckBox
+        android:id="@+id/age_checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/age_checkBox2"
+        android:layout_below="@+id/age_checkBox2"
+        android:text="@string/title_activity_Browse_Plans_page2_browseplansagerange5" />
+
+    <TextView
+        android:id="@+id/household_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/householdText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/title_activity_Browse_Plans_page2_Age_Range_Description"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" >
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:onClick="goback"
+            android:text="@string/back_button" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:onClick="nextPage"
+            android:text="@string/next_button" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/check_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="22dp"
+        android:padding="10dp"
+        android:textColor="#ff0000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/householdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/household"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/household_title"
+        android:layout_below="@+id/title_browse_plans_page2info"
+        android:layout_marginTop="18dp"
+        android:text="@string/household_text"
+        android:textSize="15sp" />
+
+</RelativeLayout>

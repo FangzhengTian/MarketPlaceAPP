@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="@string/title_page3" />
+        
+        <EditText
+            android:id="@+id/address1Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/address1"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:imeOptions="actionNext" />
+        
+      	<EditText
+            android:id="@+id/address2Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/address2"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:imeOptions="actionNext" />
+      	
+      	<EditText
+            android:id="@+id/cityText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/city"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:imeOptions="actionNext" />
+      	
+     	<Spinner
+			android:id="@+id/statesList"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+			android:entries="@array/usa_states_array"
+			android:prompt="@string/select_state"/>
+     	
+    	<EditText
+	       	android:id="@+id/zipcodeText"
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+	       	android:ems="10"
+	       	android:inputType="number"
+	       	android:hint="@string/zipcode"
+	       	android:singleLine="true"
+            android:imeOptions="actionNext" />
+    	
+    	<TextView
+            android:id="@+id/household_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/household_text" />
+    	
+   		<EditText
+	       	android:id="@+id/householdText"
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+	       	android:ems="10"
+	       	android:inputType="number"
+	       	android:hint="@string/household"
+	       	android:singleLine="true"
+            android:imeOptions="actionDone" />
+  
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" >
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:onClick="goback"
+            android:text="@string/back_button" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:onClick="nextPage"
+            android:text="@string/next_button" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/check_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="22dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="#ff0000" />
+
+</RelativeLayout>

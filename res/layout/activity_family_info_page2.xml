@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp" >
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:onClick="goback"
+            android:text="@string/back_button" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:onClick="nextPage"
+            android:text="@string/next_button" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/currentlyInsured"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:text="@string/currentlyInsured"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        
+        <RadioGroup
+	        android:id="@+id/radioInsurance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+
+	        <RadioButton
+	            android:id="@+id/currentlyInsuredYes"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:text="@string/yes" />
+	
+	        <RadioButton
+	            android:id="@+id/currentlyInsuredNo"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	           	android:layout_marginTop="10dp"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:text="@string/no" />
+	 	</RadioGroup>	        
+
+        <TextView
+            android:id="@+id/currentlyEnrolled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:text="@string/currentlyEnrolled"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        
+      	<RadioGroup
+	        android:id="@+id/radioEnrolled"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+
+	        <RadioButton
+	            android:id="@+id/currentlyEnrolledYes"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:text="@string/yes" />
+	
+	        <RadioButton
+	            android:id="@+id/currentlyEnrolledNo"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:text="@string/no" />
+	   </RadioGroup>
+	   
+      	<TextView
+            android:id="@+id/taxPayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:text="@string/taxPayer"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioTaxPayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/taxPayerYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/taxPayerNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/no" />
+        </RadioGroup>
+	        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/check_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="#ff0000" />
+    
+</RelativeLayout>

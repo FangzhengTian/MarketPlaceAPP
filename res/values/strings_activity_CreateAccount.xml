@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="firstname">First Name</string>
+    <string name="middlename">Middle Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="dob">Date of Birth: MM/DD/YYYY</string>
+    <string name="pick_button">Pick Date</string>
+    <string name="exit_button">Exit</string>
+    <string name="password">Password</string>
+    <string name="retype">Retype Password</string>
+    <string name="email">Email</string>
+    <string name="sq_prompt">Choose a question</string>
+    <string name="sa">Insert your answer here</string>
+
+    <string-array name="sq1">
+        <item>Where are you from?</item>
+        <item>Which city were you born?</item>
+        <item>Which university did you graduate from?</item>
+    </string-array>
+    <string-array name="sq2">
+        <item>What is your favourite book as a child?</item>
+        <item>What is your favourite sport?</item>
+        <item>What is your pet\'s name?</item>
+    </string-array>
+
+    <string name="create_button">Create</string>
+    <string name="agree">Agree</string>
+    <string name="agreement">The Health Benefits Exchange (HBE) went live on October 2013, where states had an option to set-up their own exchange or defer to a Federal exchange where individuals could go and shop for Health Plans. The users can perform the following functions through a Health Benefits Exchange in conjunction with the state based customer portal for Benefits ManagementThere is a drive to evaluate the use of Mobile phones (smartphones and regular phones) to provide access to the users to perform all the functions that a user can perform using regular channels. There is no measured return on investment for states on using mobile phones to perform functions that can be performed using regular channels to access Health insurance benefits.</string>
+    <string name="success_msg">Congratulations! Your account is created!</string>
+    
+</resources>

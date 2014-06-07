@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cmu.cap.marketplaceapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cmu.cap.appactivities.FirstScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.CreateAccountPage1Activity"
+            android:label="@string/title_activity_create_account" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.CreateAccountPage2Activity"
+            android:label="@string/title_activity_create_account" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.CreateAccountPage3Activity"
+            android:label="@string/title_activity_create_account" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.CreateAccountPage4Activity"
+            android:label="@string/title_activity_create_account" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.SuccessfulLoginActivity"
+            android:label="@string/title_activity_successful_login" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.ForgetPasswordPage1Activity"
+            android:label="@string/title_activity_forget_password" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.ForgetPasswordPage2Activity"
+            android:label="@string/title_activity_forget_password" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.ForgetPasswordPage3Activity"
+            android:label="@string/title_activity_forget_password" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.ApplyForBenefitsPage1Activity"
+            android:label="@string/title_activity_apply_for_benefits" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.ApplyForBenefitsPage2Activity"
+            android:label="@string/title_activity_apply_for_benefits" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.FamilyInfoPage1Activity"
+            android:label="@string/title_activity_family_info" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.FamilyInfoPage2Activity"
+            android:label="@string/title_activity_family_info" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.FamilyInfoPage3Activity"
+            android:label="@string/title_activity_family_info" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.FamilyInfoPage4Activity"
+            android:label="@string/title_activity_family_info" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.SummaryActivity"
+            android:label="@string/title_activity_family_info" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.ApplyForBenefitsEligiblePlansActivity"
+            android:label="@string/title_activity_family_info" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.CheckStatusActivity"
+            android:label="@string/title_activity_check_status" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.BrowsePlanPage1Activity"
+            android:label="@string/title_activity_browse_plan" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.BrowsePlanPage2Activity"
+            android:label="@string/title_activity_browse_plan" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.BrowsePlanPage3Activity"
+            android:label="@string/title_activity_browse_plan" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.BrowsePlanPage4Activity"
+            android:label="@string/title_activity_browse_plan" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.BrowsePlanPage5Activity"
+            android:label="@string/title_activity_browse_plan" >
+        </activity>
+        <activity
+            android:name="cmu.cap.appactivities.BrowsePlanPage6Activity"
+            android:label="@string/title_activity_browse_plan" >
+        </activity>
+    </application>
+
+</manifest>

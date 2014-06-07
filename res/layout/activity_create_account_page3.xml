@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:maxLines="15"
+        android:scrollbars="vertical"
+        android:text="@string/agreement" />
+
+    <CheckBox
+        android:id="@+id/agree_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/agreement"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/agreement"
+        android:layout_marginTop="20dp"
+        android:text="@string/agree" />
+
+    <TextView
+        android:id="@+id/check_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/agreement"
+        android:layout_below="@+id/agree_checkBox"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/agreement"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:onClick="goBack"
+        android:text="@string/back_button" />
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/back_button"
+        android:layout_alignRight="@+id/agreement"
+        android:text="@string/create_button" />
+
+</RelativeLayout>

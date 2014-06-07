@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" >
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:onClick="goback"
+            android:text="@string/back_button" />
+
+    </RelativeLayout>
+    
+  	<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+  	    <TextView
+  		    android:id="@+id/checkStatusTitle"
+  		    android:layout_width="284dp"
+  		    android:layout_height="wrap_content"
+  		    android:layout_marginLeft="15dp"
+  		    android:layout_marginRight="15dp"
+  		    android:layout_marginTop="20dp"
+  		    android:text="@string/checkStatus"
+  		    android:textStyle="bold" />
+  	    
+  		<TextView
+            android:id="@+id/status_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:maxLines="20"
+            android:scrollbars="vertical" />
+
+	</LinearLayout>
+
+  	<TextView
+        android:id="@+id/check_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="22dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="#ff0000" />
+  	
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<resources>
+
+<string name="title_activity_browse_plans_info">INFORMATION FOR BROWSE PLANS</string>
+<string name="title_activity_browse_plans_description">THE HBE MOBILE APPLICATION ALLOWS YOU TO BROWSE PLANS FOR INDIVIDUAL/FAMILY</string>
+<string name="title_activity_Browse_Plans_page2_Age_Range_Description">Age Range of People in the houshold (Check all that apply)</string>
+<string name="title_activity_Browse_Plans_page2_header">Household Information</string>
+<string name="title_activity_Browse_Plans_page2_browseplansagerange5">> 64</string>
+<string name="title_activity_Browse_Plans_page2_browseplansagerange4">60 - 64</string>
+<string name="title_activity_Browse_Plans_page2_browseplansagerange3">19 - 59</string>
+<string name="title_activity_Browse_Plans_page2_browseplansagerange2">5 - 18</string>
+<string name="title_activity_Browse_Plans_page2_browseplansagerange1">0 - 4</string>
+<string name="title_activity_Browse_Plans_page3_header">Health Information</string>
+<string name="title_activity_browse_plans_page4_header">Income Information</string>
+<string name="title_activity_browse_plans_page4_IncomePrimary">Household\'s Income from job/self - employment per annum ($) </string>
+<string name="title_activity_browse_plans_page4_IncomeSecondary">Income from other sources</string>
+<string name="title_activity_Browse_Plans_page4_header">Income Information</string>
+<string name="title_activity_Browse_Plans_page3_incomerange1">0-25000</string>
+<string name="title_activity_Browse_Plans_page3_incomerange2">25000-50000</string>
+<string name="title_activity_Browse_Plans_page3_incomerange3">>50000</string>
+<string name="title_activity_Browse_Plans_page_5header">Employer Coverage</string>
+<string name="title_activity_BrowsePlansEmployeeCoverage">Is Employer Coverage available to anyone in the household ?</string>
+<string name="EmployeeCoverageYes">Yes</string>
+<string name="EmployeeCoverageNo">No</string>  
+<string name="finish">Finish</string>
+<string name="title_activity_browse_plan">Browse Plan</string>
+<string name="ALSorESRDBrowse">Is anyone in the family suffering from ALS or ESRD?</string>
+<string name="BlindDisabledBrowse">Is anyone in the family blind or disabled?</string>
+<string name="pregnantBrowse">Is anyone in the family pregnant?</string>
+
+
+</resources>

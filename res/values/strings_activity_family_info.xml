@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="noOfPeople">No of people in household applying for benefits:</string>
+    <string name="currentlyInsured">Are you currently insured by your employer?</string>
+    <string name="currentlyEnrolled">Are you currently enrolled in Medicare/Medicaid?</string>
+    <string name="taxPayer">Is this person a Tax Payer</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    
+    <string name="pregnant">Is this person pregnant?</string>
+    <string name="pregnantYes">Yes</string>
+    <string name="pregnantNo">No</string>
+    
+    <string name="ALSorESRD">Person suffering from ALS or ESRD?</string>
+    <string name="ALSorESRDYes">Yes</string>
+    <string name="ALSorESRDNo">No</string>
+    
+    <string name="BlindDisabled">Person Blind or Disabled?</string>
+    <string name="BlindDisabledYes">Yes</string>
+    <string name="BlindDisabledNo">No</string>
+    
+    <string name="jobType">Select your income type. Choose N/A if you don\'t have a job</string>
+    
+    <string name="select_incomeType">Select Income Type</string>
+    <string-array name="income_type_array">
+        <item>Choose Income Type</item>
+        <item>N/A</item>
+        <item>Job Income</item>
+		<item>Self Employment</item>
+		<item>Other Income</item>
+	</string-array>
+	
+    <string name="submitinfo">By clicking the submit button your information will be stored in the database.</string>
+    <string name="JobName">Select your job/company name</string>
+    <string name="Income">Specify your income</string>
+    <string name="add">Add another income source</string>
+    <string name="submit">Submit</string>
+    <string name="apply">Apply</string>
+    <string name="householdinfo">Household Information:</string>
+    <string name="familyinfo">Family Members Information:</string>
+    <string name="incomeinfo">Income Information:</string>
+    
+    <string name="planEligibility">Please find below the plans you are eligible for: </string>
+</resources>
